@@ -642,7 +642,7 @@ img {
 
 .modal-close-btn {
   border-radius: 50%;
-  color: #e7e9fc;
+  background-color: #e7e9fc;
   position: absolute;
   right: 24px;
   top: 24px;
@@ -660,6 +660,7 @@ img {
 
 .modal-close-btn:hover {
   background-color: #404bbf;
+  border: none;
 }
 .modal-close-btn:focus {
   background-color: #404bbf;
@@ -688,6 +689,10 @@ img {
   margin-bottom: 8px;
 }
 
+.comment {
+  margin-bottom: 16px;
+}
+
 .modal-item {
   width: 100%;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -712,6 +717,7 @@ img {
   width: 100%;
   resize: none;
   padding: 8px 16px;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-btn {
@@ -721,12 +727,10 @@ img {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -796,13 +800,15 @@ img {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   vertical-align: middle;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  position: relative;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+   position: relative;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .chekbox-icon {
@@ -822,7 +828,7 @@ img {
   display: block;
 }
 
-.user-chekbox {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

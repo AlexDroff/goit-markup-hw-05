@@ -557,7 +557,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-container">
+          <div class="modal-container comment">
             <label for="user-comment" class="input-label-text">Comment</label>
             <textarea
               name="user-comment"
@@ -566,21 +566,20 @@
               placeholder="Text input"
             ></textarea>
           </div>
-
           <div class="modal-container-chekbox">
-            <label for="user-chekbox" class="input-chekbox options">
-              <input
-                id="user-chekbox"
-                class="user-chekbox"
-                type="checkbox"
-                name="user-chekbox"
-                value="user-chekbox"
-              />
+            <input
+              id="user-privacy"
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="input-chekbox options"
+              >I accept the terms and conditions of the
               <span class="chekbox-quadrat"
                 ><svg class="chekbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use></svg
               ></span>
-              I accept the terms and conditions of the
               <a class="accent-user-chekbox" href="http://google.com"
                 >Privacy Policy</a
               >
