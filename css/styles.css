@@ -548,7 +548,6 @@ img {
   height: 40px;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-bottom: 16px;
   padding: 8px 16px;
   color: #fff;
   outline: none;
@@ -578,7 +577,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   border-radius: 4px;
   width: 165px;
   height: 40px;
@@ -689,10 +687,6 @@ img {
   margin-bottom: 8px;
 }
 
-.comment {
-  margin-bottom: 16px;
-}
-
 .modal-item {
   width: 100%;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -755,7 +749,6 @@ img {
   margin-bottom: 4px;
 }
 .modal-input-icon {
-  padding: 3px 0px;
   position: absolute;
   left: 16px;
   top: 50%;
