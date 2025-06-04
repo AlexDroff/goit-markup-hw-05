@@ -794,7 +794,7 @@ img {
   display: block;
 }
 
-.chekbox-quadrat {
+.square {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -805,7 +805,7 @@ img {
   justify-content: center;
   vertical-align: middle;
   fill: transparent;
-  position: absolute;
+  position: relative;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -821,14 +821,14 @@ img {
   fill: none;
 }
 
-.visually-hidden:checked + .chekbox-quadrat {
+input:checked + label .square {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-.visually-hidden:checked + .chekbox-quadrat .chekbox-icon {
-  fill: #fff;
+input:checked + label .square .chekbox-icon {
   display: block;
+  fill: #fff;
 }
 
 .visually-hidden {
@@ -850,7 +850,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-left: 8px;
 }
 
 .accent-user-chekbox {
@@ -860,6 +859,7 @@ img {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+  margin-left: 4px;
 }
 
 /* #endregion modal */
