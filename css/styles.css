@@ -779,15 +779,8 @@ img {
 }
 
 .modal-container-chekbox {
-  display: flex;
-  align-items: center;
   margin-top: 16px;
   margin-bottom: 24px;
-}
-
-.input-chekbox {
-  display: flex;
-  align-items: center;
 }
 
 .option {
@@ -824,11 +817,10 @@ img {
 input:checked + label .square {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
 }
 input:checked + label .square .chekbox-icon {
-  display: block;
-  fill: #fff;
+  display: inline-flex;
+  fill: #f4f4fd;
 }
 
 .visually-hidden {
