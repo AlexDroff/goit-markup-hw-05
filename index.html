@@ -65,7 +65,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -479,8 +481,118 @@
             </li>
           </ul>
         </div>
+        <div class="footer-con-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <form class="footer-form">
+            <label for="subscribe" class="footer-form-label">
+              <input
+                type="email"
+                class="footer-form-input"
+                name="subscribe"
+                id="subscribe"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-form-btn" type="submit">
+              Subscribe<svg class="footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-airplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- #endregion footer -->
+
+    <!-- #region modal -->
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-container">
+            <label for="user-name" class="input-label-text">Name</label>
+            <div class="modal-input-cover">
+              <input
+                type="text"
+                class="modal-input modal-item"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-container">
+            <label for="user-phone" class="input-label-text">Phone</label>
+            <div class="modal-input-cover">
+              <input
+                type="tel"
+                class="modal-input modal-item"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-container">
+            <label for="user-email" class="input-label-text">Email</label>
+            <div class="modal-input-cover">
+              <input
+                type="email"
+                class="modal-input modal-item"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-container">
+            <label for="user-comment" class="input-label-text">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea modal-item"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-container-chekbox">
+            <label for="user-chekbox" class="input-chekbox options">
+              <input
+                id="user-chekbox"
+                class="user-chekbox"
+                type="checkbox"
+                name="user-chekbox"
+                value="user-chekbox"
+              />
+              <span class="chekbox-quadrat"
+                ><svg class="chekbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use></svg
+              ></span>
+              I accept the terms and conditions of the
+              <a class="accent-user-chekbox" href="http://google.com"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="modal-btn" type="button">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- #endregion modal -->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
