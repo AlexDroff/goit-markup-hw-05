@@ -674,10 +674,6 @@ img {
   fill: #fff;
 }
 
-.modal-input-cover {
-  margin-bottom: 8px;
-}
-
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -740,6 +736,18 @@ img {
   background: #404bbf;
 }
 
+.form {
+  margin-bottom: 8px;
+}
+
+.comment {
+  margin-bottom: 16px;
+}
+
+.chekbox {
+  margin-bottom: 24px;
+}
+
 .input-label-text {
   font-weight: 400;
   font-size: 12px;
@@ -749,6 +757,7 @@ img {
   display: block;
   margin-bottom: 4px;
 }
+
 .modal-input-icon {
   position: absolute;
   left: 16px;
@@ -767,14 +776,10 @@ img {
 
 .modal-container:focus-within .modal-item {
   border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 .modal-container:focus-within .modal-input-icon {
   fill: #4d5ae5;
-}
-
-.modal-container-chekbox {
-  margin-top: 16px;
-  margin-bottom: 24px;
 }
 
 .square {
